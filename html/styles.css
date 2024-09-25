@@ -1,0 +1,143 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+header {
+    grid-column: 1 / -1; /* Header spans across all columns */
+    background-color: #f8f8f8; /* Styling for visibility */
+    padding: 20px;
+    display: flex;
+    align-items: center; /* Align header content vertically */
+    justify-content: space-between; /* Distributes space on either side of the header content */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header img {
+    width: 150px;
+    height: auto;
+    border-radius: 75px;  /* Circular profile picture */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 200px 1fr; /* Sidebar width and remaining space */
+    grid-template-rows: auto 1fr auto; /* Rows for header, main content, and footer */
+    height: 100vh;
+}
+
+nav {
+    flex-basis: 200px; /* Adjust width of the sidebar */
+    background-color: #f4f4f4; /* Light gray background for the sidebar */
+    height: 100vh; /* Full viewport height */
+    overflow-y: auto; /* Allows scrolling within the sidebar */
+    padding: 20px; /* Padding inside the sidebar */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Adds shadow to the right of the sidebar */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background-color: #ddd; /* Highlight effect on hover */
+    color: #000;
+}
+
+main {
+    flex-grow: 1; /* Takes the remaining space */
+    padding: 20px;
+}
+
+section {
+    margin-top: 20px;
+}
+
+footer {
+    grid-column: 1 / -1; /* Footer spans from the first to the last column */
+    background-color: #333; /* Dark background for footer */
+    color: #fff; /* White text for visibility */
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1); /* Shadow at the top of the footer */
+}
+
+
+.profile-container {
+    display: flex;
+    align-items: center; /* Aligns items vertically in the center */
+    gap: 20px; /* Adds space between the image and the profile info */
+}
+
+.profile-container img {
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Maintain aspect ratio */
+    border-radius: 50%; /* Circular image */
+}
+
+.profile-info {
+    flex-grow: 1; /* Allows the text block to fill the rest of the header */
+}
+
+.profile-info h1 {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+.profile-info p {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+.social-links a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #333; /* Dark text for readability */
+    font-weight: bold;
+}
+
+.social-links a:hover {
+    text-decoration: underline; /* Indicates clickable links */
+}
+
+.skill {
+    display: inline-block; /* Aligns skill boxes side by side */
+    width: calc(25% - 20px); /* Adjust width for four columns with spacing */
+    box-sizing: border-box; /* Ensures padding and border are included in the width */
+    border-left: 5px solid #00796b; /* Darker teal accent line on the left */
+    margin: 20px 0;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+.project, .research-topic {
+    background-color: #fff;  /* White background for each research topic */
+    border-left: 5px solid #00796b; /* Darker teal accent line on the left */
+    margin: 20px 0;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.project h3, .skill h3, .research-topic h3 {
+    color: #333; /* Dark grey color for the title */
+    margin-bottom: 5px;
+}
+
+.project ul, .skill ul, .research-topic ul {
+    list-style-type: circle; /* Circle bullets for a bit of variety */
+    padding-left: 20px; /* Proper indentation for readability */
+}
+
+.project li, .skill ul, .research-topic li {
+    margin-bottom: 5px; /* Space between bullet points */
+    line-height: 1.6; /* Slightly more line spacing for readability */
+}
