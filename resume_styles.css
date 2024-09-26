@@ -1,0 +1,160 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+} */
+
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.2;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.material-icons.md-18 { font-size: 18px; }
+
+.contacts a {
+    text-decoration: underline;
+    color: #333; /* Dark text for readability */
+    font-weight: bold;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 32px;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 24px;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+p {
+    margin: 5px 0;
+}
+
+ul {
+    margin-top: 5px;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+a {
+    text-decoration: none;
+    color: #0077b5; /* LinkedIn blue */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header Section */
+/* header {
+    background-color: #f4f4f4;
+    padding: 20px 0;
+    border-bottom: 2px solid #333;
+    margin-bottom: 30px;
+} */
+header h1, header p{
+text-align: center; /* Center align all content in header */
+line-height: 1.2;
+margin: 0;
+}
+.profile {
+    text-align: center;
+}
+
+.contacts {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.contacts p {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Education & Experience Sections */
+section {
+    margin-bottom: 25px;
+}
+
+.education-item, .experience-item {
+    margin-bottom: 20px;
+}
+
+.company-location {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.company-location h3, .company-location .location {
+    margin: 0;
+    font-weight: bold;
+}
+.location {
+    font-style: italic;
+}
+
+
+/* Combine Job Title and Location-Date */
+.job-title-location {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-style: italic;
+}
+
+.job-title-location p {
+    margin: 0;
+}
+
+/* Location-Date */
+.location-date {
+    font-style: italic;
+    color: #666;
+}
+
+.experience-item ul {
+    padding-left: 20px;
+}
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .contacts p {
+        display: block;
+        text-align: center;
+    }
+
+    .location-date {
+        text-align: left;
+    }
+}
