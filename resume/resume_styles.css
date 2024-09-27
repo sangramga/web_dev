@@ -5,10 +5,22 @@
     font-family: 'Times New Roman', Times, serif;
 } */
 
-
+/* Add this at the top of your CSS file */
+@font-face {
+    font-family: 'ArcherBookPro';
+    src: url('ArcherBookPro.otf') format('opentype');
+}
+@font-face {
+    font-family: 'ArcherBoldPro';
+    src: url('ArcherBoldPro.otf') format('opentype');
+}
+@font-face {
+    font-family: 'ArcherBookItalPro';
+    src: url('archer2/ArcherBookItalPro.otf') format('opentype');
+}
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'ArcherBookPro', Arial, sans-serif;
     line-height: 1.2;
     margin: 0;
     padding: 0;
@@ -29,6 +41,7 @@ body {
 }
 
 h1, h2, h3 {
+    font-family: 'ArcherBoldPro', Arial, sans-serif;
     font-weight: bold;
     margin-bottom: 10px;
 }
@@ -118,6 +131,7 @@ section {
 }
 .location {
     font-style: italic;
+    font-family: 'ArcherBookItalPro', Arial, sans-serif;
 }
 
 
@@ -127,6 +141,7 @@ section {
     justify-content: space-between;
     align-items: center;
     font-style: italic;
+    font-family: 'ArcherBookItalPro', Arial, sans-serif;
 }
 
 .job-title-location p {
@@ -137,6 +152,7 @@ section {
 .location-date {
     font-style: italic;
     color: #666;
+    font-family: 'ArcherBookItalPro', Arial, sans-serif;
 }
 
 .experience-item ul {
